@@ -1,26 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/contact.css">
-    <title>Document</title>
+    <title>Fluitende Fietser - Contact</title>
+    <link rel="stylesheet" href="/CSS/contact.css">
 </head>
 <body>
-<header>
-      <p id="title">Fluitende fietser</p>
-    <br>
-        <ul class="ulmenu">
-            
-            <li><a class="box" href="Fietsverhuur.html">Fietsverhuur</a></li>
-            <li><a class="box" href="contact.html">Contact</a></li>
-            <li><a class="box" href="index.html">Home</a></li>
-            <li><a class="box" href="Overons.html">Over ons</a></li>
-            <li><a class="box" href="Fietsenpagina.html">Fietsenpagina</a></li>
-        </ul>
-        <br>
-        <img src="/IMAGE/logo.png" alt="logo" id="logo">
-
+    <header>
+        <div class="header-left">
+            <img src="/IMAGE/logo.png" alt="logo" id="logo">
+        </div>
+        <h1 id="title">Fluitende Fietser</h1>
+        <div class="header-right">
+            <img src="/IMAGE/zoek.png" alt="zoek" id="zoek">
+            <input type="text" placeholder="Zoek hier" id="search-box">
+        </div>
     </header>
+
+    <nav>
+        <a href="#">Fietsverhuur</a>
+        <a href="#">Contact</a>
+        <a href="#">Home</a>
+        <a href="#">Over ons</a>
+        <a href="#">Fietspagina</a>
+    </nav>
+
+    <div class="main-content">
+    <div class="contact-form">
+        <h2>Contact</h2>
+        <label>Voornaam:</label>
+        <input type="text">
+        <label>Achternaam:</label>
+        <input type="text">
+        <label>E-mail:</label>
+        <input type="email">
+        <label>Telefoonnummer:</label>
+        <input type="text">
+        <label id ="Vragen">Vragen:</label>
+        <textarea></textarea>
+        <button type="submit">Verstuur</button>
+    </div>
+
+    <div class="info-box">
+        <h2>Informatie</h2>
+        <p><strong>E-mail:</strong><br>FluitendeFietser@gmail.com</p>
+        <p><strong>Adres:</strong><br>Sterrenlaan 10 Eindhoven<br>5631KA</p>
+        <p><strong>Contact Nummer:</strong><br>(+31)0676453448</p>
+    </div>
+</div>
+
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Over Ons</a>
+            <a href="#">Contact</a>
+            <a href="#">Algemene Voorwaarden</a>
+            <a href="#">E-mail</a>
+            <a href="#">Facebook</a>
+        </div>
+        <span>© 2025 Fluitende Fietsers – Alle rechten voorbehouden KvK: 12345678 | BTW: NL001234567B01</span>
+        <div class="fiets-animatie">
+            <img src="/IMAGE/Fluitende fietser.jpg" alt="Fietser" class="fiets">
+        </div>
+    </footer>
 </body>
 </html>
