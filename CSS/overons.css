@@ -1,4 +1,43 @@
-body {
+header {
+  background-color: #A1F6FF;
+  padding: 20px;
+  text-align: center; 
+  font-family: 'Arial', sans-serif;
+}
+
+.ulmenu {
+  list-style-type: none; 
+  display: flex; 
+  justify-content: center; /* in het midden */
+  gap: 20px; 
+  margin: 0;
+  padding: 0;
+}
+
+.ulmenu a {
+  text-decoration: none;
+  padding: 15px;
+  background: white;
+  border-radius: 6px;
+  transition: background 0.5s;
+}
+
+.ulmenu a:hover {
+  background: #ddd;
+}
+
+.naam {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+  font-family: 'Arial', sans-serif;
+}
+.titel {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 20px;
+  font-family: 'Georgia, italic';
+}body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #FFFFFF;
