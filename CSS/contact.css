@@ -1,10 +1,16 @@
-body {
+/* General Reset */
+html, body {
+    height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #FFFFFF;
-    color: #000000;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -41,6 +47,7 @@ header {
     border: 1px solid #ccc;
 }
 
+/* Navigation */
 nav {
     display: flex;
     justify-content: center;
@@ -62,12 +69,17 @@ nav a:hover {
     background-color: #004080;
 }
 
+/* Main Content */
+main, .main-content {
+    flex: 1; /* fills available space */
+}
+
 .main-content {
     display: flex;
-    justify-content: center; /* center op de pagina */
-    gap: 30px; /* ruimte tussen de boxen */
+    justify-content: center;
+    gap: 30px;
     padding: 20px;
-    flex-wrap: wrap; /* zorgt dat het mobiel netjes onder elkaar gaat */
+    flex-wrap: wrap;
 }
 
 .contact-form, .info-box {
@@ -75,14 +87,44 @@ nav a:hover {
     padding: 20px;
     border-radius: 20px;
     min-width: 300px;
-    flex: 1; /* beide boxen nemen evenveel ruimte in als mogelijk */
+    flex: 1;
     box-sizing: border-box;
 }
-#Vragen{
-display: flex;
-flex-direction: column;
+
+.contact-form h2, .info-box h2 {
+    font-size: 24px;
+    font-weight: bold;
 }
 
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #001F3F;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #004080;
+}
+
+/* Footer */
 footer {
     background-color: #ADD8E6;
     color: #FFFFFF;
@@ -90,10 +132,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100px;
     gap: 10px;
     font-size: 12px;
-    
 }
 
 footer .footer-links {
@@ -111,6 +151,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Fietser animatie */
 .fiets-animatie {
     position: relative;
     width: 100%;
@@ -130,24 +171,18 @@ footer a:hover {
 @keyframes fietsen-heen-weer {
     0% {
         left: 0;
-        transform: scaleX(1); /* naar rechts */
+        transform: scaleX(1);
     }
     49.99% {
         left: calc(100% - 50px);
-        transform: scaleX(1); /* nog steeds naar rechts */
+        transform: scaleX(1);
     }
     50% {
         left: calc(100% - 50px);
-        transform: scaleX(-1); /* draai naar links */
-    }
-    99.99% {
-        left: 0;
-        transform: scaleX(-1); /* naar links */
+        transform: scaleX(-1);
     }
     100% {
         left: 0;
-        transform: scaleX(1); /* draai weer naar rechts */
+        transform: scaleX(-1);
     }
 }
-
-
