@@ -118,7 +118,7 @@ main, .main-content {
     color: #FFFFFF;
     font-weight: bold;
     cursor: pointer;
-    font-size: 10em;
+
 }
 
 .contact-form button:hover {
@@ -194,4 +194,13 @@ footer a:hover {
     flex: 1;
     width: stretch;
     width: stretch;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 1.6;
+    font-size: 2em;
+}
+.text2 {
+    font-size: 2em;
 }
