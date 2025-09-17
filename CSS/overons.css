@@ -37,4 +37,115 @@ header {
   font-size: 35px;
   margin-top: 20px;
   font-family: 'Georgia, italic';
+}body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ADD8E6;
+    color: #FFFFFF;
+    padding: 10px 20px;
+}
+
+#logo {
+    width: 90px;
+    height: 80px;
+}
+
+#title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#zoek {
+    width: 35px;
+    height: 35px;
+}
+
+#search-box {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #001F3F;
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: #001F3F;
+    padding: 8px 14px;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #004080;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center; /* center op de pagina */
+    gap: 30px; /* ruimte tussen de boxen */
+    padding: 20px;
+    flex-wrap: wrap; /* zorgt dat het mobiel netjes onder elkaar gaat */
+}
+
+.contact-form, .info-box {
+    background-color: #ADD8E6;
+    padding: 20px;
+    border-radius: 20px;
+    min-width: 300px;
+    flex: 1; /* beide boxen nemen evenveel ruimte in als mogelijk */
+    box-sizing: border-box;
+}
+#Vragen{
+display: flex;
+flex-direction: column;
+}
+
+footer {
+    background-color: #ADD8E6;
+    color: #FFFFFF;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100px;
+    gap: 10px;
+    font-size: 12px;
+    
+}
+
+footer .footer-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
