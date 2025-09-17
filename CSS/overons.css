@@ -187,3 +187,11 @@ footer a:hover {
         transform: scaleX(-1);
     }
 }
+
+
+
+#historie, #missie, #team {
+    flex: 1;
+    width: stretch;
+    width: stretch;
+}
