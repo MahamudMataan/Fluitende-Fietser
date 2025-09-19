@@ -82,10 +82,10 @@ main, .main-content {
     flex-wrap: wrap;
 }
 
-.contact-form, .info-box {
+.info-box {
     background-color: #ADD8E6;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 100px;
     min-width: 300px;
     flex: 1;
     box-sizing: border-box;
@@ -100,7 +100,7 @@ main, .main-content {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 6px;
     border: 1px solid #ccc;
     font-size: 14px;
 }
