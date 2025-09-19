@@ -89,6 +89,15 @@ main {
   text-align: center;
 }
 
+.voorwaarden {
+    font-size: 1.2em; 
+    line-height: 1.6;
+  }
+  .voorwaarden h3 {
+    margin-top: 1em;
+    font-size: 1.4em;
+  }
+
 footer {
   background: #ADD8E6;
   padding: 40px 20px 80px; 
