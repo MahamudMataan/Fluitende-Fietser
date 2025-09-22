@@ -204,3 +204,15 @@ footer a:hover {
 .text2 {
     font-size: 2em;
 }
+.huur-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputlijst {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 25%;
+    font-size: 2em;
+}
