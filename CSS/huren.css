@@ -189,30 +189,38 @@ footer a:hover {
 }
 
 
-
-#historie, #missie, #team {
-    flex: 1;
-    width: stretch;
-    width: stretch;
+.inputlijst input,
+.inputlijst textarea,
+.inputlijst select {
+    width: 100%;               /* past zich aan binnen de 25% van .inputlijst */
+    padding: 12px 16px;        /* ruimte binnenin */
+    border: 2px solid #ccc;
+    border-radius: 12px;       /* ronde hoeken */
+    font-size: 1em;
+    transition: all 0.3s ease;
+    outline: none;
+    box-sizing: border-box;    /* voorkomt dat padding de breedte opschuift */
 }
 
-.text {
-    font-size: 18px;
-    line-height: 1.6;
-    font-size: 2em;
-}
-.text2 {
-    font-size: 2em;
-}
-.huur-form {
-    display: flex;
-    flex-direction: column;
+/* Hover effect */
+.inputlijst input:hover,
+.inputlijst textarea:hover,
+.inputlijst select:hover {
+    border-color: #888;
 }
 
-.inputlijst {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 25%;
-    font-size: 2em;
+/* Focus effect */
+.inputlijst input:focus,
+.inputlijst textarea:focus,
+.inputlijst select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.4);
 }
+
+/* Placeholder styling */
+.inputlijst input::placeholder,
+.inputlijst textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
