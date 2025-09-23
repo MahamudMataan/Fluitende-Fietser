@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,11 +19,11 @@
     </header>
 
     <nav>
-        <a href="#">Fietsverhuur</a>
-        <a href="#">Contact</a>
-        <a href="#">Home</a>
-        <a href="#">Over ons</a>
-        <a href="#">Fietspagina</a>
+        <a href="huren.html">Fietsverhuur</a>
+        <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="over.html">Over ons</a>
+        <a href="fietspagina.html">Fietspagina</a>
     </nav>
 
     <div class="main-content">
@@ -46,7 +46,22 @@
     </div>
 
     <div class="info-box">
-           
+        <form class="huur-form">
+            <br>
+            <div class ="inputlijst">
+            <label for="firstname">Voornaam:</label>
+            <input type="text" id="firstname" name="firstname" required>
+            <br>
+            <label for="lastname">Achternaam:</label>
+            <input type="text" id="lastname" name="lastname" required>
+            <br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Telefoonnummer:</label>
+            <input type="tel" id="phone" name="phone" required>
+            </div>
+        </form>
     </div>
 </div>
 
