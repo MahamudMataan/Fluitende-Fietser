@@ -6,6 +6,8 @@ html, body {
   flex-direction: column;
 }
 
+
+
 header {
   display: flex;
   justify-content: space-between;
@@ -22,6 +24,7 @@ header {
   margin: 0;
   font-size: 22px;
   font-weight: bold;
+  color: white;
 }
 
 .header-right {
@@ -61,6 +64,27 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.sfeerfoto-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  
+  
+}
+
+
+.welcome1{
+  display: grid;
+  grid-column: 2;
+  grid-row: 1;
+  grid-template-rows: auto;
+}
+.openings {
+  grid-column: 2;
+  grid-row: 2;
+  
+}
+
 /* MAIN */
 main {
   flex: 1;
@@ -68,26 +92,18 @@ main {
   padding: 20px;
 }
 
-.sfeerfoto {
-  width: 300px;
-  border-radius: 20px;
-  margin-bottom: 20px;
+.sfeerfoto{
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
 }
 
-.welcome h2 {
-  margin: 10px 0;
-}
 
-.openings {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 20px;
-}
+    
 
-.openings div {
-  text-align: center;
-}
+
+
 
 footer {
   background: #ADD8E6;
@@ -96,6 +112,7 @@ footer {
   position: relative;
   overflow: hidden; 
   color: white;
+  font-size: small;
 }
 
 .fiets-animatie {
