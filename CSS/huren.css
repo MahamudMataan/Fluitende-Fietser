@@ -37,8 +37,8 @@ header {
 }
 
 #zoek {
-    width: 70px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
 }
 
 #search-box {
@@ -82,13 +82,18 @@ main, .main-content {
     flex-wrap: wrap;
 }
 
-.info-box {
+.contact-form, .info-box {
     background-color: #ADD8E6;
     padding: 20px;
-    border-radius: 100px;
+    border-radius: 20px;
     min-width: 300px;
     flex: 1;
     box-sizing: border-box;
+}
+
+.contact-form {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .contact-form h2, .info-box h2 {
@@ -100,7 +105,7 @@ main, .main-content {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
-    border-radius: 6px;
+    border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 14px;
 }
@@ -118,7 +123,6 @@ main, .main-content {
     color: #FFFFFF;
     font-weight: bold;
     cursor: pointer;
-
 }
 
 .contact-form button:hover {
@@ -188,7 +192,6 @@ footer a:hover {
     }
 }
 
-
 .inputlijst input,
 .inputlijst textarea,
 .inputlijst select {
@@ -200,6 +203,7 @@ footer a:hover {
     transition: all 0.3s ease;
     outline: none;
     box-sizing: border-box;    /* voorkomt dat padding de breedte opschuift */
+    margin-bottom: 40px;       /* ruimte tussen de velden */
 }
 
 /* Hover effect */
@@ -223,4 +227,3 @@ footer a:hover {
     color: #aaa;
     font-style: italic;
 }
-
