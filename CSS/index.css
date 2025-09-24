@@ -93,38 +93,17 @@ main {
 }
 
 .sfeerfoto{
-  width: 300px;
+  width: 200px;
   height: auto;
   margin: 10px;
   border-radius: 10px;
 }
 
 
-
-#second-sfeerfoto {
-  margin-left: 450px;
-
-}
-
-#fourth-sfeerfoto {
-  margin-left: 450px;
-}
-
-.welcome h2 {
-  margin: 10px 0;
-}
+    
 
 
 
-.openings div {
-  text-align: center;
-  font-size: 1.5em;
-}
-
-.openings h3 {
-  font-size: large;
-
-}
 
 footer {
   background: #ADD8E6;
@@ -133,6 +112,7 @@ footer {
   position: relative;
   overflow: hidden; 
   color: white;
+  font-size: small;
 }
 
 .fiets-animatie {
