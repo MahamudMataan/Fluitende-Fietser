@@ -6,6 +6,8 @@ html, body {
   flex-direction: column;
 }
 
+
+
 header {
   display: flex;
   justify-content: space-between;
@@ -22,6 +24,7 @@ header {
   margin: 0;
   font-size: 22px;
   font-weight: bold;
+  color: white;
 }
 
 .header-right {
@@ -61,6 +64,27 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.sfeerfoto-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  
+  
+}
+
+
+.welcome{
+  display: grid;
+  grid-column: 2;
+  grid-row: 1;
+  grid-template-rows: auto;
+}
+.openings {
+  grid-column: 2;
+  grid-row: 2;
+  
+}
+
 /* MAIN */
 main {
   flex: 1;
@@ -68,10 +92,22 @@ main {
   padding: 20px;
 }
 
-.sfeerfoto {
+.sfeerfoto{
   width: 300px;
-  border-radius: 20px;
-  margin-bottom: 20px;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+
+
+#second-sfeerfoto {
+  margin-left: 450px;
+
+}
+
+#fourth-sfeerfoto {
+  margin-left: 450px;
 }
 
 .welcome h2 {
@@ -79,14 +115,17 @@ main {
 }
 
 .openings {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 20px;
+  
 }
 
 .openings div {
   text-align: center;
+  font-size: 1.5em;
+}
+
+.openings h3 {
+  font-size: large;
+
 }
 
 footer {
