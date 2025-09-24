@@ -1,16 +1,17 @@
-/* General Reset */
 html, body {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
+
+
+
 body {
     display: flex;
     flex-direction: column;
 }
 
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -37,8 +38,8 @@ header {
 }
 
 #zoek {
-    width: 70px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
 }
 
 #search-box {
@@ -47,7 +48,6 @@ header {
     border: 1px solid #ccc;
 }
 
-/* Navigation */
 nav {
     display: flex;
     justify-content: center;
@@ -69,63 +69,66 @@ nav a:hover {
     background-color: #004080;
 }
 
-/* Main Content */
 main, .main-content {
-    flex: 1; /* fills available space */
+    flex: 1;
 }
 
 .main-content {
-    display: flex;
+    display: grid;
     justify-content: center;
     gap: 30px;
     padding: 20px;
     flex-wrap: wrap;
 }
 
-.info-box {
-    background-color: #ADD8E6;
-    padding: 20px;
-    border-radius: 100px;
-    min-width: 300px;
-    flex: 1;
-    box-sizing: border-box;
+main h2 {
+    text-align: center;
+    color: #001F3F;
+    margin-bottom: 20px;
+}   
+.fiets-container {
+  display: grid; /* of position: relative als je absolute positioning gebruikt */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+
+  padding: 20px;
 }
 
-.contact-form h2, .info-box h2 {
-    font-size: 24px;
-    font-weight: bold;
+
+.fiets-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, 1fr);
+  height: 100vh;                 
+  gap: 20px;
+  padding: 20px;
 }
 
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-size: 14px;
+.fiets-item {
+  background: #001F3F;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
-.contact-form textarea {
-    height: 150px;
-    resize: none;
+.fiets-item img {
+  width: 100%;
+  border-radius: 10px;
 }
 
-.contact-form button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #001F3F;
-    color: #FFFFFF;
-    font-weight: bold;
-    cursor: pointer;
-
+.fiets-item h3 {
+  color: white;
+  margin: 10px 0 5px 0;
+}
+.fiets-item p {
+  color: white;
+  visibility: hidden;
 }
 
-.contact-form button:hover {
-    background-color: #004080;
-}
 
-/* Footer */
+
 footer {
     background-color: #ADD8E6;
     color: #FFFFFF;
@@ -152,7 +155,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Fietser animatie */
 .fiets-animatie {
     position: relative;
     width: 100%;
@@ -187,40 +189,3 @@ footer a:hover {
         transform: scaleX(-1);
     }
 }
-
-
-.inputlijst input,
-.inputlijst textarea,
-.inputlijst select {
-    width: 100%;               /* past zich aan binnen de 25% van .inputlijst */
-    padding: 12px 16px;        /* ruimte binnenin */
-    border: 2px solid #ccc;
-    border-radius: 12px;       /* ronde hoeken */
-    font-size: 1em;
-    transition: all 0.3s ease;
-    outline: none;
-    box-sizing: border-box;    /* voorkomt dat padding de breedte opschuift */
-}
-
-/* Hover effect */
-.inputlijst input:hover,
-.inputlijst textarea:hover,
-.inputlijst select:hover {
-    border-color: #888;
-}
-
-/* Focus effect */
-.inputlijst input:focus,
-.inputlijst textarea:focus,
-.inputlijst select:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 6px rgba(0, 123, 255, 0.4);
-}
-
-/* Placeholder styling */
-.inputlijst input::placeholder,
-.inputlijst textarea::placeholder {
-    color: #aaa;
-    font-style: italic;
-}
-
