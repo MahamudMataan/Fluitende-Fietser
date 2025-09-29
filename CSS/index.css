@@ -98,8 +98,31 @@ main {
   margin: 10px;
   border-radius: 10px;
 }
+.sfeerfoto-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
 
 
+.swiper{
+  width: 100%;
+  height: fit-content;
+}
+
+.swiper-slide img{
+  width: 30%;
+}
+
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+  color: black;
+}
+
+.swiper, .swiper-pagination{
+  color: black;
+}
     
 
 
