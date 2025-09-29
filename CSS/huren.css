@@ -227,3 +227,46 @@ footer a:hover {
     color: #aaa;
     font-style: italic;
 }
+
+ul.text {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.text li {
+  position: relative;
+  padding-left: 28px; /* ruimte voor checkbox */
+  cursor: pointer;
+  user-select: none;
+}
+
+/* lege checkbox */
+ul.text li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #555;
+  border-radius: 3px;
+  background: #fff;
+  box-sizing: border-box;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+/* aangevinkte checkbox */
+ul.text li.checked::before {
+  background: #007bff;
+  border-color: #007bff;
+}
+
+/* vinkje erin */
+ul.text li.checked::after {
+  content: "✓";
+  position: absolute;
+  left: 3px;
+  top: 0px;
+  font-size: 16px;
+  color: white;
+}
