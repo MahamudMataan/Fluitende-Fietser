@@ -40,6 +40,12 @@ header {
     height: 50px;
 }
 
+.winkelwagen-icoon {
+  width: 70px;
+  height: 50px;
+  cursor: pointer;
+}
+
 #search-box {
     padding: 5px 10px;
     border-radius: 5px;
